@@ -7,7 +7,7 @@ export default function App() {
   return (
     <>
     <Navbar />
-      <main className="w-screen overflow-hidden relative">
+      <main className="w-full overflow-hidden relative">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
