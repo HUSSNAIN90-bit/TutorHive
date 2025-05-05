@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+.big-heading{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.big-heading-2{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.big-heading-3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+.normal-heading{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 5%;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.text{
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+.text-2{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+.button{
+    background: #FAC43C;
+    cursor: pointer;
+}
