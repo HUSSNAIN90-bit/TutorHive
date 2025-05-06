@@ -3,6 +3,18 @@ import "../css/home.css";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  const list = [
+    "Graphic Design",
+    "UI/UX Design",
+    "IT Software",
+    "Development",
+    "Graphic Design",
+    "UI/UX Design",
+    "IT Software",
+    "Development",
+    "IT Software",
+    "Development",
+  ];
   return (
     <>
       <section className="flex pt-[120px] px-10 h-screen ">
@@ -13,7 +25,7 @@ const Home = () => {
             </div>
             <p className="text">ENHANCE YOUR CAREER</p>
           </div>
-          <h1 className="big-heading ">
+          <h1 className="big-heading">
             Access The World’s Best Learning Course With TutorHiv
           </h1>
           <p className="text">
@@ -54,12 +66,15 @@ const Home = () => {
         </div>
         <div className="w-full flex justify-center gap-[50px] p-10 flex-wrap">
           <div className="flex flex-col gap-[50px]">
-            <div className="w-[650px] bg-white rounded-2xl flex p-2" style={{
-              boxShadow:" rgb(218, 218, 218) 0px 4px 5px 2px"
-            }}>
+            <div
+              className="w-[650px] bg-white rounded-2xl flex p-2"
+              style={{
+                boxShadow: " rgb(218, 218, 218) 0px 4px 5px 2px",
+              }}
+            >
               <div className="h-full p-4">
                 <div className="p-8 bg-[#FAC43C] rounded-2xl">
-                  <img src="/images/Vector.png" alt=""className="w-40"  />
+                  <img src="/images/Vector.png" alt="" className="w-40" />
                 </div>
               </div>
               <div className="flex flex-col gap-3 p-4">
@@ -73,12 +88,15 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[650px] bg-white rounded-2xl flex p-2" style={{
-              boxShadow:" rgb(218, 218, 218) 0px 4px 5px 2px"
-            }}>
+            <div
+              className="w-[650px] bg-white rounded-2xl flex p-2"
+              style={{
+                boxShadow: " rgb(218, 218, 218) 0px 4px 5px 2px",
+              }}
+            >
               <div className="h-full p-4">
                 <div className="p-8 bg-[#FF8345] rounded-2xl">
-                  <img src="/images/Vector.png" alt=""className="w-40"  />
+                  <img src="/images/Vector.png" alt="" className="w-40" />
                 </div>
               </div>
               <div className="flex flex-col gap-3 p-4">
@@ -94,12 +112,15 @@ const Home = () => {
             </div>
           </div>
           <div className="flex flex-col gap-[50px]">
-            <div className="w-[650px] bg-white rounded-2xl flex p-2" style={{
-              boxShadow:" rgb(218, 218, 218) 0px 4px 5px 2px"
-            }}>
+            <div
+              className="w-[650px] bg-white rounded-2xl flex p-2"
+              style={{
+                boxShadow: " rgb(218, 218, 218) 0px 4px 5px 2px",
+              }}
+            >
               <div className="h-full p-4">
                 <div className="p-8 bg-[#0066B4] rounded-2xl">
-                  <img src="/images/Vector.png" alt=""className="w-40"  />
+                  <img src="/images/Vector.png" alt="" className="w-40" />
                 </div>
               </div>
               <div className="flex flex-col gap-3 p-4">
@@ -113,12 +134,15 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[650px] bg-white rounded-2xl flex p-2" style={{
-              boxShadow:" rgb(218, 218, 218) 0px 4px 5px 2px"
-            }}>
+            <div
+              className="w-[650px] bg-white rounded-2xl flex p-2"
+              style={{
+                boxShadow: " rgb(218, 218, 218) 0px 4px 5px 2px",
+              }}
+            >
               <div className="h-full p-4">
                 <div className="p-8 bg-[#48B774] rounded-2xl">
-                  <img src="/images/Vector.png" alt=""className="w-40"  />
+                  <img src="/images/Vector.png" alt="" className="w-40" />
                 </div>
               </div>
               <div className="flex flex-col gap-3 p-4">
@@ -132,6 +156,46 @@ const Home = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#fff] flex p-4">
+        <div className="w-[40%] h-screen flex justify-center items-center p-5">
+          <img
+            src="/images/image.png"
+            alt=""
+            className="border-[20px] border-white rounded-4xl object-cover w-full"
+            style={{
+              boxShadow: " rgb(218, 218, 218) 0px 4px 5px 2px",
+            }}
+          />
+        </div>
+        <div className="w-[60%] flex flex-col gap-10 justify-center px-[70px]">
+          <div className="w-fit  px-10 py-2 bg-[#FAC43C99] rounded-4xl">
+            <p className="text">ENHANCE YOUR CAREER</p>
+          </div>
+          <h3 className="big-heading-2">
+            Boost your skillset with our online learning courses
+          </h3>
+          <p className="text">
+            Unlock your full potential with TutorHiv – your gateway to the
+            world’s most effective and engaging learning experience. Whether
+            you're a student, professional, or lifelong learner, TutorHiv offers
+            expertly designed courses tailored to your goals.
+          </p>
+          <div className="w-full h-[1px] bg-[#A1A1A1]"></div>
+          <div className="w-full flex flex-wrap gap-5">
+            {list.map((value , index) => (
+              <div
+              key={index}
+                className="p-3 px-8 bg-[#F6F6F6] rounded-lg"
+                style={{
+                  boxShadow: "0px 1px 10px 2px #0000001A",
+                }}
+              >
+                {value}
+              </div>
+            ))}
           </div>
         </div>
       </section>

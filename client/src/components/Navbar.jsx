@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <header
-      className="w-screen fixed top-0 left-0 z-10 bg-white"
+      className="w-screen fixed top-0 left-0 z-10 bg-[#F0F0F0]"
       style={{
-        padding: "20px 30px",
+        padding: "20px 40px",
       }}
     >
       <nav className="flex items-center justify-between">
