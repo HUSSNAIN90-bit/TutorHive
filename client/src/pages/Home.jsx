@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/home.css";
 import { Link } from "react-router-dom";
+import CourseCard from "../components/CourseCard";
 
 const Home = () => {
   const list = [
@@ -185,9 +186,9 @@ const Home = () => {
           </p>
           <div className="w-full h-[1px] bg-[#A1A1A1]"></div>
           <div className="w-full flex flex-wrap gap-5">
-            {list.map((value , index) => (
+            {list.map((value, index) => (
               <div
-              key={index}
+                key={index}
                 className="p-3 px-8 bg-[#F6F6F6] rounded-lg"
                 style={{
                   boxShadow: "0px 1px 10px 2px #0000001A",
@@ -197,6 +198,17 @@ const Home = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="flex flex-col gap-10 p-10 items-center py-20">
+        <div className=" px-10 py-2 bg-[#FAC43C99] rounded-4xl w-fit">
+          <p className="text-2">OUR BEST COURSES</p>
+        </div>
+        <h3 className="big-heading-2">Discover a most popular Online Course</h3>
+        <div className="w-full flex gap-20 gap-y-20 justify-center mt-10 flex-wrap">
+          {[...Array(6)].map((_, i) => (
+            <CourseCard key={i} />
+          ))}
         </div>
       </section>
     </>
